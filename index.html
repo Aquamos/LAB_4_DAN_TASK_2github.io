@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TASK_2</title>
+</head>
+<body>
+    <div class="formBlock">
+
+
+        <form class="form" name="form">
+            <label for="choose">Enter integer: </label>
+            <input id="intN" name="i_like" style="margin-left: 67px;" pattern="^[0-9]*$">
+            <button id="intNbtn">Submit</button>
+        </form>
+
+        <form class="form">
+            <label for="choose">Enter real number: </label>
+            <input id="realN" name="i_like" style="margin-left: 35px;" pattern="^[-+]?[0-9]*[.,]?[0-9]+(?:[eE][-+]?[0-9]+)?$">
+            <button id="realBtn">Submit</button>
+        </form>
+
+        <form class="form">
+            <label for="choose">Enter birth-date: </label>
+            <input id="birth" name="i_like" style="margin-left: 50px;" pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-\.](0?[1-9]|1[012])[\/\-\.]\d{4}$">
+            <button id="birthBtn">Submit</button>
+        </form>
+
+        <form class="form" id="pswdForm1">
+            <label for="choose">Enter password: </label>
+            <input id="password" name="i_like" style="margin-left: 52px;" maxlength="32" required>
+        </form>
+
+        <form class="form">
+            <label for="choose">Confirm password: </label>
+            <input id="passwordConfirm" name="i_like" style="margin-left: 33px;" maxlength="32" required>
+            <button id="passwordBtn">Submit</button>
+        </form>
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
